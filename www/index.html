@@ -40,15 +40,15 @@
         });
 
         $('#btnD').click(function(e) {
-            btnCClick(e);
+            btnDClick(e);
         });
 
         $('#btnE').click(function(e) {
-            btnCClick(e);
+            btnEClick(e);
         });
 
         $('#btnF').click(function(e) {
-            btnCClick(e);
+            btnFClick(e);
         });
         init();
     });
@@ -226,7 +226,7 @@
     //buttonDがクリックされたときの処理
     function btnDClick(e){
       active = false;
-      period = 60* parseInt($("#minute").val()) + parseInt($("#second").val());
+      period = 180;
       $("#time").html("経過時間：0");
       $("#remain").html("残り時間："+period);
 
