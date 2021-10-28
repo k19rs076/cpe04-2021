@@ -206,8 +206,8 @@
 
     // ButtonBがクリックされた時の処理
     function btnBClick(e){
-        active=false;
-        
+        active=false;  
+     //  timer = false;
     }
 
     // ButtonCがクリックされた時の処理
@@ -233,6 +233,11 @@
       $("#btnD").prop("disabled",true);
     }
     
+    // ButtonEがクリックされた時の処理
+    function btnEClick(e){
+        active = true;
+      //  timer=true;
+    }
  
     // 繰り返し実行する処理
     function timer(){  
@@ -264,7 +269,7 @@
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
     <button id="btnD">3分</button>
-    <button id="btnE">a</button>
+    <button id="btnE">再開</button>
     <button id="btnF">a</button>
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
